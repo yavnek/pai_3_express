@@ -1,0 +1,16 @@
+var express = require('express');
+var router = express.Router();
+
+
+router.get('/about', function(req, res, next) {
+  
+  const data = {
+    title: 'O nas',
+    description: 'Jesteśmy firmą XYZ zajmującą się...'
+    
+  };
+  
+  
+  res.render('about', data);
+});
+module.exports = router;
